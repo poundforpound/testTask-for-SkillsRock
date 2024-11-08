@@ -1,0 +1,112 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 600px;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+input[type="text"] {
+	width: calc(100% - 22px);
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+button {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	background-color: #007BFF;
+	color: #fff;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+#add-task {
+	background-color: #800080; /* Фиолетовый цвет */
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+#add-task:hover {
+	background-color: #660066; /* Темно-фиолетовый цвет при наведении */
+}
+
+.filters {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.filter-btn {
+	background-color: #007BFF;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 5px 10px;
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+.filter-btn:last-child {
+	margin-right: 0;
+}
+
+.filter-btn:hover {
+	background-color: #0056b3;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+li.completed {
+	text-decoration: line-through;
+	color: #888;
+}
+
+button.delete-btn {
+	background-color: #dc3545;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+button.delete-btn:hover {
+	background-color: #c82333;
+}

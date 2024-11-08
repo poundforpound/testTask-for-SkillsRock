@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel and Random Users</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Random Users Container -->
+      <div class="container" id="random-users-container">
+        <h1>Random Users</h1>
+        <button id="fetch-users">Fetch Random Users</button>
+        <div id="loading" style="display: none">Загрузка...</div>
+        <div id="error" style="display: none; color: red">Не удалось загрузить пользователей</div>
+        <div id="user-grid"></div>
+      </div>
+
+      <!-- Image Carousel Container -->
+      <div class="container">
+        <h1>Image Carousel</h1>
+        <div class="carousel">
+          <button id="prev-btn">Назад</button>
+          <img
+            id="carousel-image"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Porsche_911_Turbo_S_Exclusive_Series_IMG_0698.jpg/1200px-Porsche_911_Turbo_S_Exclusive_Series_IMG_0698.jpg"
+            alt="Carousel Image"
+          />
+          <button id="next-btn">Вперед</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
