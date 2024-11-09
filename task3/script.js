@@ -32,10 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
   nextBtn.addEventListener('click', nextImage);
   prevBtn.addEventListener('click', prevImage);
 
-  // Автоматическая смена изображений каждые 3 секунды
   setInterval(nextImage, 3000);
 
-  // Показываем первое изображение при загрузке страницы
   showImage(currentIndex);
 
   // Random Users
@@ -61,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .then((data) => {
         displayUsers(data.results);
-        randomUsersContainer.classList.add('loaded'); // Добавляем класс для отступа
+        randomUsersContainer.classList.add('loaded');
       })
       .catch((error) => {
         console.error('There was a problem with the fetch operation:', error);

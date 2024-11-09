@@ -3,8 +3,8 @@ body {
 	background-color: #f4f4f4;
 	margin: 0;
 	padding: 0;
-	overflow-y: auto; /* Добавляем вертикальный скролл на уровне body */
-	overflow-x: hidden; /* Предотвращает горизонтальный скролл */
+	overflow-y: auto; 
+	overflow-x: hidden; 
 }
 
 .main-container {
@@ -12,11 +12,11 @@ body {
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	max-width: 1000px; /* Увеличили ширину контейнера */
+	max-width: 1000px; 
 	padding: 20px;
 	box-sizing: border-box;
-	margin-right: auto; /* Прижимаем контейнер к правому краю */
-	margin-left: auto; /* Прижимаем контейнер к правому краю */
+	margin-right: auto; 
+	margin-left: auto; 
 }
 
 .container {
@@ -31,12 +31,12 @@ body {
 }
 
 #random-users-container {
-	margin-top: 0; /* Начальное значение */
-	transition: margin-top 0.5s ease; /* Плавный переход */
+	margin-top: 0; 
+	transition: margin-top 0.5s ease; 
 }
 
 #random-users-container.loaded {
-	margin-top: 50px; /* Отступ сверху после загрузки */
+	margin-top: 50px; 
 }
 
 h1 {
@@ -59,7 +59,7 @@ button:hover {
 
 #user-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Увеличили минимальную ширину блоков */
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
 	gap: 10px;
 }
 
@@ -68,22 +68,22 @@ button:hover {
 	border-radius: 4px;
 	padding: 10px;
 	text-align: center;
-	overflow: hidden; /* Предотвращает выход текста за границы */
-	white-space: nowrap; /* Предотвращает перенос текста */
-	text-overflow: ellipsis; /* Добавляет многоточие для длинного текста */
+	overflow: hidden; 
+	white-space: nowrap; 
+	text-overflow: ellipsis; 
 }
 
 .user-item img {
 	border-radius: 50%;
 	margin-bottom: 10px;
-	max-width: 100%; /* Убедимся, что изображения не выходят за границы */
+	max-width: 100%; 
 }
 
 .user-item p {
 	margin: 0;
-	overflow: hidden; /* Предотвращает выход текста за границы */
-	white-space: nowrap; /* Предотвращает перенос текста */
-	text-overflow: ellipsis; /* Добавляет многоточие для длинного текста */
+	overflow: hidden; 
+	white-space: nowrap; 
+	text-overflow: ellipsis; 
 }
 
 .carousel {
